@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Final Space</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Agregar la referencia a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Personajes de Final Space</h1>
+    </header>
+    <div class="container mt-4">
+        <div class="input-group">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar por nombre"> 
+            <br>
+            <br>
+            <div class="input-group-append">
+                <button class="btn btn-dark" onclick="searchCharacter()">Buscar</button>
+            </div>
+            <br>
+        </div>
+        <div class="table-container">
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Especie</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="characterList">
+                <!-- Los datos de los personajes se agregarán aquí -->
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
